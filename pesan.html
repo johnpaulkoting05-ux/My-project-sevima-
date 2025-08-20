@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pesan Tiket Kapal</title>
+  <link rel="stylesheet" href="projec.css" />
+</head>
+<body>
+  <header>
+    <nav class="container nav-header">
+      <div class="logo">Tiket Kapal Laut</div>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <button id="logout-btn" class="btn-logout">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Pesan Tiket Kapal</h1>
+
+    <section>
+      <h2>Jadwal Kapal (Klik untuk Memesan)</h2>
+      <div id="jadwal-section" class="jadwal-list"></div>
+          </section>
+
+    <section>
+      <h2>Formulir Pemesanan</h2>
+      <form id="booking-form" class="form-booking">
+        <input type="text" id="passenger-name" placeholder="Nama Penumpang" required>
+        <input type="tel" id="phone-number" placeholder="Nomor Telepon" required>
+
+        <input type="text" id="selected-route" placeholder="Rute Kapal yang Dipilih" readonly required>
+
+        <input type="number" id="ticket-quantity" placeholder="Jumlah Tiket" min="1" required>
+
+        <button type="submit" class="btn-primary">Pesan Tiket</button>
+      </form>
+
+      <div id="hasil-pesanan" style="margin-top:1rem;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Tiket Kapal Laut</p>
+  </footer>
+
+  <script src="projec.js"></script>
+</body>
+</html>

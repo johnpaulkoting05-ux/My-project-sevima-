@@ -1,0 +1,341 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2edf69;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #90e0ef;
+}
+
+.btn-primary {
+  background-color: #12963a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.routes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.route-card {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  color: rgba(25, 155, 8, 0.582);
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.kontak-section {
+  background-color: #f8f9fa;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.kontak-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0077b6;
+}
+
+.kontak-card {
+  display: inline-block;
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+.kontak-card p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.kontak-card a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kontak-card a:hover {
+  text-decoration: underline;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 6rem 1rem;
+  background-image: url('c.jpeg'); /* Ganti dengan nama file gambar latar */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan agar teks lebih terbaca */
+}
+
+.hero h1,
+.hero p,
+.hero a, 
+.hero button {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero .btn-primary:hover {
+  background-color: #023e8a;
+}
+#hasil-pesanan {
+  background: #e0f7fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #023e8a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem;
+}
+
+.login-page {
+  background: linear-gradient(135deg, #0077b6, #48cae4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* =======================
+   Jadwal Kapal Section
+========================== */
+#jadwal {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#jadwal h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.jadwal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.jadwal-list li {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #0077b6;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.jadwal-list li:hover {
+  background-color: #e0f7ff;
+  transform: translateY(-2px);
+}
+
+.jadwal-list li::before {
+  content: "🚢 ";
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #0077b6;
+}
+
+@media (max-width: 600px) {
+  #jadwal {
+    padding: 2rem 1rem;
+  }
+
+  .jadwal-list li {
+    font-size: 0.95rem;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-links a, .btn-logout {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary, .btn-secondary, .btn-logout {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #0077b6;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #023e8a;
+  color: white;
+}
+
+.btn-logout {
+  background-color: crimson;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-booking input {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.hasil-pesanan {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

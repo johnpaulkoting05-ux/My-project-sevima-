@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiket Kapal Laut - Login & Dashboard</title>
+  <link rel="stylesheet" href="projec.css" />
+</head>
+<body>
+
+  <!-- Halaman Login -->
+  <section id="login-section" class="login-container">
+    <h1>Login Akun</h1>
+    <form id="login-form" novalidate>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required placeholder="Masukkan Username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="Masukkan Password">
+      </div>
+      <button type="submit" class="btn-primary">Login</button>
+      <p id="login-error" class="error-message" style="color:red; margin-top:0.5rem;"></p>
+    </form>
+  </section>
+
+  <!-- Halaman Dashboard -->
+  <section id="dashboard-section" hidden>
+    <header>
+     <nav class="container nav-header">
+        <div class="logo">
+          <img src="a.png" alt="Logo Tiket Kapal Laut" class="logo-img">
+         
+        </div>
+
+        <div class="nav-links">
+          <a href="#hero">Beranda</a>
+          <a href="#jadwal">Jadwal</a>
+          <a href="#kontak">Kontak</a>
+          <button id="logout-btn" class="btn-logout">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero container">
+      <h1>Selamat Datang di JRTravel </h1>
+      <p>Pesan tiket kapal laut dengan mudah, cepat, dan aman.</p>
+      <a href="pesan.html" class="btn-primary">Pesan Tiket</a>
+    </section>
+
+    <section id="jadwal" class="container">
+      <h2>Jadwal Kapal</h2>
+      <ul class="jadwal-list">
+        <li>Jakarta- Surabaya| 15 Mey 2025 | 08:00 | Harga: Rp.350.000</li>
+        <li>Surabaya - Makasar | 18 Mey 2025 | 10:00 | Harga: Rp.500.000</li>
+        <li>Makasar- Balikpapan | 20 Mey 2025 | 13:00 | Harga: Rp.550.000</li>
+      </ul>
+    </section>
+
+    <section id="kontak" class="container kontak-section">
+      <h2>Kontak Kami</h2>
+      <p>Email: <a href="Petrus..com">info@tiketkapallaut.com</a></p>
+      <p>Telepon: <a href="tel:+6281234567890">+62 812 3456 7890</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Tiket Kapal Laut</p>
+    </footer>
+  </section>
+
+  <script src="projec.js"></script>
+</body>
+</html>
